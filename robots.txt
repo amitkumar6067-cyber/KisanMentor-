@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+Disallow: /scripts/
+Disallow: /search.html
+
+Sitemap: https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/sitemap.xml

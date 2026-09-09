@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/categories/fasal-utpadan.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/categories/mitti-poshan.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/categories/rog-keet.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/categories/sarkari-yojana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/categories/agriculture-students.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/categories/farming-technology.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://YOUR_GITHUB_USERNAME.github.io/KisanMentor/articles/dhan-ki-kheti-utpadan-tips.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>
