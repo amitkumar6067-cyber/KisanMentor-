@@ -4,8 +4,8 @@
  * BEFORE FIRST DEPLOY: set siteUrl and basePath to match your GitHub Pages URL.
  *
  * GitHub project site example:
- *   siteUrl:  "https://YOUR_GITHUB_USERNAME.github.io/KisanMentor"
- *   basePath: "/KisanMentor"
+    siteUrl: "https://amitkumar6067-cyber.github.io/KisanMentor-",
+    basePath: "/KisanMentor-",
  *
  * User site or custom domain at root:
  *   siteUrl:  "https://YOUR_GITHUB_USERNAME.github.io"
