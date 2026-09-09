@@ -1,0 +1,65 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build site
+        run: npm run build
+
+      - name: Verify critical outputs
+        run: |
+          test -f index.html
+          test -f sitemap.xml
+          test -f robots.txt
+          test -f assets/css/style.css
+          test -f assets/js/main.js
+          test -f data/generated/search-index.json
+          test -f categories/fasal-utpadan.html
+          test -f about.html
+          test -f contact.html
+          test -f privacy.html
+          test -f disclaimer.html
+          test -f terms.html
+          test -f 404.html
+          echo "Critical files present."
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
