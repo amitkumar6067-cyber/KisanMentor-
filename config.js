@@ -22,9 +22,8 @@ module.exports = {
   locale: "hi_IN",
 
   // REQUIRED: replace with your real public site URL (no trailing slash)
-  siteUrl: "https://YOUR_GITHUB_USERNAME.github.io/KisanMentor",
-  basePath: "/KisanMentor",
-
+  siteUrl: "https://amitkumar6067-cyber.github.io/KisanMentor-",
+basePath: "/KisanMentor-",
   defaultAuthor: "KisanMentor Editorial",
 
   // Optional public contact email shown on contact page. Leave "" if none yet.
